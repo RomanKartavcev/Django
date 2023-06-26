@@ -10,7 +10,7 @@ class MyServer(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header('Content-type', 'text/html')
             self.end_headers()
-            with open("4/contacts.html", 'rb') as file:
+            with open("contacts/contacts.html", 'rb') as file:
                 self.wfile.write(file.read())
 
         else:
